@@ -1,0 +1,29 @@
+flowchart LR
+
+A[Market Data Input]
+
+A --> B[Agent 1<br/>Market Scanner]
+
+B --> C[Agent 2<br/>Strategy Generator]
+
+C --> D[Agent 3<br/>Logical Evaluation]
+
+D --> E[Agent 4<br/>Chart Analysis]
+
+E --> F[Agent 5<br/>Sentiment Analysis]
+
+F --> G[Agent 6<br/>LogiTrade Decision Coordinator]
+
+G --> H[Risk Validation]
+
+H --> I{Trade Approved?}
+
+I -->|Yes| J[Execution Workflow]
+
+I -->|No| K[Reject / Monitor]
+
+J --> L[Position Monitoring]
+
+L --> M[Outcome Analysis]
+
+M --> G

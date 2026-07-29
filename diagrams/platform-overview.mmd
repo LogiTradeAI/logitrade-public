@@ -1,0 +1,43 @@
+flowchart TB
+
+A[User Interface] --> B[LogiTrade Platform Core]
+
+B --> C[Market Intelligence Layer]
+
+C --> D[AI Decision Layer]
+
+D --> E[Risk Validation Layer]
+
+E --> F[Trade Execution Layer]
+
+F --> G[Position Monitoring]
+
+G --> H[Performance Analysis]
+
+H --> D
+
+subgraph AI Layer
+D1[Strategy Analysis AI]
+D2[Logical Reasoning AI]
+D3[Chart Interpretation AI]
+D4[Market Sentiment AI]
+D5[Research AI]
+D6[LogiTrade Coordination AI]
+end
+
+D --> D1
+D --> D2
+D --> D3
+D --> D4
+D --> D5
+D --> D6
+
+subgraph External Systems
+I[Market Data Sources]
+J[Trading Services]
+K[Security Systems]
+end
+
+I --> C
+F --> J
+B --> K

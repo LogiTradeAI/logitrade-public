@@ -1,0 +1,29 @@
+flowchart TB
+
+A[Market Monitoring]
+
+A --> B[Opportunity Detection]
+
+B --> C[AI Analysis]
+
+C --> D[Signal Generation]
+
+D --> E[Risk Validation]
+
+E --> F{Approval Decision}
+
+F -->|Approved| G[Trade Preparation]
+
+F -->|Rejected| H[Continue Monitoring]
+
+G --> I[Execution]
+
+I --> J[Position Management]
+
+J --> K[Take Profit / Exit Evaluation]
+
+K --> L[Trade Completion]
+
+L --> M[Performance Feedback]
+
+M --> A
